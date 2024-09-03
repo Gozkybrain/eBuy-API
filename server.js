@@ -14,7 +14,7 @@ app.use(cors({
     origin: [
         'http://localhost:3000', // Allow requests from localhost:3000
         'http://localhost:5173', // Vite default development server port
-        'https://gozkybrain.github.com' // Add your production domain here
+        'https://real-estate-ashen-mu.vercel.app/' // Add your production domain here
     ]
 }));
 
