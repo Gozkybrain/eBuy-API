@@ -14,7 +14,7 @@ app.use(cors({
     origin: [
         'http://localhost:3000', // Allow requests from localhost:3000
         'http://localhost:5173', // Vite default development server port
-        'https://real-estate-ashen-mu.vercel.app/' // Add your production domain here
+        'https://real-estate-ashen-mu.vercel.app' // Corrected production domain (removed trailing slash)
     ]
 }));
 
@@ -54,6 +54,11 @@ app.get('/properties/random', (req, res) => {
 app.get('/properties/price-below-500k', (req, res) => {
     const propertiesBelow500k = data.filter(property => parseFloat(property.price.replace(/[^0-9.-]+/g, "")) < 500000);
     res.json(propertiesBelow500k);
+});
+
+// Catch-all route for unsupported routes (Optional)
+app.use((req, res) => {
+    res.status(404).json({ error: 'Route not found' });
 });
 
 // Start the server
