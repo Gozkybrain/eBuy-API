@@ -2,6 +2,9 @@
 
 Welcome to the Real Estate Properties API documentation. This comprehensive guide will help you understand how to interact with the API to retrieve information about various real estate properties.
 
+Check out official [Mobile App Implementation of the eBuy API](https://github.com/Gozkybrain/ebuy-home-purchase)
+
+
 ## Base URL
 
 The base URL for accessing the API is `http://localhost:3000/`.
