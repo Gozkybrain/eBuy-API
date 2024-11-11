@@ -14,6 +14,7 @@ app.use(cors({
     origin: [
         'http://localhost:3000', // Allow requests from localhost:3000
         'http://localhost:5173', // Vite default development server port
+        'https://linzhomes-wi8h.vercel.app'
         'https://real-estate-ashen-mu.vercel.app' // Corrected production domain (removed trailing slash)
     ]
 }));
